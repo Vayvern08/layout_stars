@@ -5,21 +5,14 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 98px;
-  height: 96px;
 }
 
 .stars {
   display: flex;
-  justify-content: space-between;
 }
 
-.stars :first-child {
-  margin-left: 2px;
-}
-
-.stars--0 :nth-child(n) {
-  margin-top: 2px;
+.stars :not(:last-child) {
+  margin-right: 4px;
 }
 
 .star {
@@ -27,6 +20,7 @@
   height: 16px;
   background-image: url("./images/star.svg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .stars--1 :first-child {
